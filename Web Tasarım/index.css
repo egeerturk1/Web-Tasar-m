@@ -1,0 +1,9 @@
+div p{
+    color: red;
+}
+.container div p{
+    color: royalblue;
+}
+p+div{
+    color: aqua;
+}
