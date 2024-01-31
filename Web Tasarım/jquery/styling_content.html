@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarım</h3>
+    <ul id="liste">
+        <li class="item1">Sıfırdan İleri Düzey Web Geliştirme <a href="#">Link</a></li>
+        <li>Sıfırdan Uzman Seviyesine Programlama</li>
+        <li>Android ve iOS Mobil Uygulama Geliştirme</li>
+    </ul>
+
+
+    <script>
+        $("#header").css("color","orange");
+
+        $("#liste a").css("text-decoration","none");
+
+        $("a").css("text-decoration","none");
+
+        let styles = {
+            color : "blue",
+            fontSize : "22px",
+            border :"1px solid gray",
+        }
+
+        $("li").css(styles);
+
+        let listeler = document.querySelectorAll("li");
+        for(let i = 0;i<listeler.length;i++){
+            listeler[i].style.color="red";
+        }
+
+        $("a").css({
+            color : "green",
+            fontSize : "16px",
+            border :"2px solid blue",
+        });
+    </script>
+</body>
+</html>

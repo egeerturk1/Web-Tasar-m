@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            .highlight{
+                background-color:gray ;
+            }
+            .orange{
+                background-color: orange;
+            }
+        </style>
+</head>
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarım</h3>
+    <ul id="liste">
+        <li class="item1">Sıfırdan İleri Düzey Web Geliştirme <a href="#">Link</a></li>
+        <li>Sıfırdan Uzman Seviyesine Programlama</li>
+        <li>Android ve iOS Mobil Uygulama Geliştirme</li>
+    </ul>
+
+    <img src="manzara01.jpg" width="200">
+
+    <input type="text" id="ad" placeholder="Adınız">
+    <input type="text" id="soyad" placeholder="Soyadınız">
+    <button id="btnKayitOl" onclick="kayitOl();">Kayıt Ol</button>
+
+    <script>
+        // console.log($("h3").text());
+
+        // console.log($("ul li").text());
+
+        $("h3").text("Udemy Kurslarım");
+
+        function kayitOl(){
+            var ad = $("#ad").val();
+            var soyad = $("#soyad").val();
+
+            console.log(ad + " " + soyad + " " + "kursa kayıt oldu")
+
+            $("#ad").toggleClass("highlight");
+            $("#soyad").addClass("orange");
+            $("#ad").removeClass("highlight");
+            $("img").attr("width","350");
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

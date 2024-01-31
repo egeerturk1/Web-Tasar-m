@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+           .paragrafrenklendir{
+            color: purple;
+            font-size: 22px;
+           }
+        </style>
+</head>
+<body>
+    
+    <p id="p1">Sıfırdan İleri Düzey Web Geliştirme</p>
+
+    <p id="p2">Sıfırdan İleri Düzey Web Geliştirme</p>
+
+    <p class="paragraf">Sıfırdan İleri Düzey Web Geliştirme</p>
+
+    <p class="paragraf">Sıfırdan İleri Düzey Web Geliştirme</p>
+
+    <script>
+        
+
+        $(document).ready(function(){
+            $("#p1").click(function(){
+                $(this).addClass("paragrafrenklendir");
+            });
+        });
+
+
+    </script>
+</body>
+</html>
